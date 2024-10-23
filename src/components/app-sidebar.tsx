@@ -7,6 +7,7 @@ import { NavMain } from '@/components/nav-main';
 import { NavUser } from '@/components/nav-user';
 import { TeamSwitcher } from '@/components/team-switcher';
 import { Sidebar, SidebarContent, SidebarFooter, SidebarHeader, SidebarRail } from '@/components/ui/sidebar';
+import { ModeToggle } from './ModeToggle';
 
 // This is sample data.
 const data = {
@@ -94,7 +95,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavMain items={data.navMain} />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <div className='flex items-center'>
+          <NavUser user={data.user} />
+          <ModeToggle />
+        </div>
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
