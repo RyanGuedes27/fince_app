@@ -31,7 +31,7 @@ const data = {
       items: [
         {
           title: 'Dashboard',
-          url: '#',
+          url: '/pages/home',
         },
         {
           title: 'Transações',
