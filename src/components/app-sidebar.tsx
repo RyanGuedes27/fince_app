@@ -32,11 +32,11 @@ const data = {
       items: [
         {
           title: 'Dashboard',
-          url: '/pages/home',
+          url: '/home',
         },
         {
           title: 'Transações',
-          url: '#',
+          url: '/transaction',
         },
         {
           title: 'Ativos',
